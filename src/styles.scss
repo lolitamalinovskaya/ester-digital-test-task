@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$font-logo:'Forum', sans-serif;
+$font-main:'Roboto', sans-serif;
+$bg-dark: #030303;
+$dark-red: #710707;
+$gold: #9D8665;
+
+@mixin font {
+  font-family: $font-main;
+  font-weight: 500;
+}
+

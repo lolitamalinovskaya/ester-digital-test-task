@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;400&display=swap');
+
+$font-logo:'Forum', sans-serif;
+$font-main:'Roboto', sans-serif;
+$bg-dark: #030303;
+$dark-red: #710707;
+$gold: #9D8665;
+
+@mixin font {
+  font-family: $font-main;
+  font-weight: 100;
+}
+
+.gallery {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  
+  @media (max-width: 1024px) {
+    margin-top: 70px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media (max-width: 420px) {
+    margin-top: 42px;
+  }
+
+  &__header {
+    padding-bottom: 25px;
+
+    @media (max-width: 1024px) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__title {
+      font-family: $font-logo;
+      font-size: 80px;
+      color: $gold;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      line-height: 90px;
+      position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $dark-red;
+
+      @media (max-width: 1024px) {
+        bottom: -20px;
+      }
+    }
+    @media (max-width: 1024px) {
+      font-size: 50px;
+      line-height: 75px;
+    }
+    @media (max-width: 768px) {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    @media (max-width: 420px) {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+  &__inner {
+    padding-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px 60px;
+    width: 100%;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+      padding: 60px 108px 0;
+      gap: 60px 1%;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 768px) {
+      padding: 40px 56px 0;
+      gap: 40px 1%;
+    }
+
+    @media (max-width: 420px) {
+      padding: 40px 50px 0;
+      justify-content: center;
+      gap: 40px 0;
+    }
+  }
+
+  &__item {
+    flex-basis: 30%;
+
+    @media (max-width: 420px) {
+      flex-basis: 100%;
+    }
+
+    img {
+      max-width: 440px;
+      max-height: 285px;
+      object-fit: cover;
+
+      @media (max-width: 1024px) {
+        max-width: 330px;
+        max-height: 215px;
+      }
+      @media (max-width: 768px) {
+        max-width: 280px;
+        max-height: 180px;
+      }
+      @media (max-width: 420px) {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  &__item-description {
+    padding-top: 25px;
+
+  }
+
+  &__item-title {
+    font-family: $font-logo;
+    font-size: 32px;
+    color: $bg-dark;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    position: relative;
+    line-height: 35px;
+    transition: color 0.25s ease-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 3px;
+    background-color: $dark-red;
+
+    @media (max-width: 1024px) {
+      width: 150px;
+      height: 2px;
+    }
+  }
+
+    &:hover {
+      color: $gold;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 28px;
+      letter-spacing: 3px;
+      line-height: 31px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+  }
+
+  &__item-text, &__item-mini {
+    @include font;
+
+    font-size: 22px;
+    padding: 10px 0;
+    line-height: 26px;
+    font-style: normal;
+    color: #000000;
+    transition: color 0.25s ease-out;
+
+    &:hover {
+      color: $gold;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 23px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    @media (max-width: 420px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &__item-mini {
+    font-size: 18px;
+    line-height: 22px;
+    padding: unset;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
