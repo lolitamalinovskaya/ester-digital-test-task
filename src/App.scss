@@ -96,21 +96,11 @@ $gold: #9D8665;
     }
 
     @media (max-width: 420px) {
-      justify-content: center;
       gap: 40px 50px;
     }
   }
 
   &__item {
-    flex: 1 0 30%;
-
-    @media (max-width: 1024px) {
-      flex: 1 0 50%;
-    }
-
-    @media (max-width: 420px) {
-      flex-basis: 100%;
-    }
 
     img {
       max-width: 440px;
@@ -124,9 +114,6 @@ $gold: #9D8665;
       @media (max-width: 895px) {
         max-width: 280px;
         max-height: 180px;
-      }
-      @media (max-width: 420px) {
-        flex-basis: 100%;
       }
     }
   }
