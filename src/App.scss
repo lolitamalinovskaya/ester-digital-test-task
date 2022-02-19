@@ -14,6 +14,7 @@ $gold: #9D8665;
 
 .gallery {
   max-width: 1480px;
+  min-width: 320px;
   margin: 140px auto;
   padding: 0 20px;
 
@@ -85,25 +86,27 @@ $gold: #9D8665;
     justify-content: center;
 
     @media (max-width: 1024px) {
-      padding: 60px 108px 0;
-      gap: 60px 1%;
-      justify-content: space-between;
+      padding-top: 60px;
+      gap: 60px 108px;
     }
 
     @media (max-width: 768px) {
-      padding: 40px 56px 0;
-      gap: 40px 1%;
+      padding-top: 40px;
+      gap: 40px 56px;
     }
 
     @media (max-width: 420px) {
-      padding: 40px 50px 0;
       justify-content: center;
-      gap: 40px 0;
+      gap: 40px 50px;
     }
   }
 
   &__item {
-    flex-basis: 30%;
+    flex: 1 0 30%;
+
+    @media (max-width: 1024px) {
+      flex: 1 0 50%;
+    }
 
     @media (max-width: 420px) {
       flex-basis: 100%;
@@ -118,7 +121,7 @@ $gold: #9D8665;
         max-width: 330px;
         max-height: 215px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 895px) {
         max-width: 280px;
         max-height: 180px;
       }
@@ -168,7 +171,7 @@ $gold: #9D8665;
       line-height: 31px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 896px) {
       font-size: 22px;
       line-height: 24px;
     }
