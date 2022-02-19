@@ -14,20 +14,19 @@ $gold: #9D8665;
 
 .gallery {
   max-width: 1480px;
-  margin: 0 auto;
+  margin: 140px auto;
   padding: 0 20px;
 
-  
   @media (max-width: 1024px) {
-    margin-top: 70px;
+    margin: 70px auto;
   }
 
   @media (max-width: 768px) {
-    margin-top: 60px;
+    margin: 60px auto;
   }
 
   @media (max-width: 420px) {
-    margin-top: 42px;
+    margin: 42px auto;
   }
 
   &__header {
@@ -60,14 +59,17 @@ $gold: #9D8665;
         bottom: -20px;
       }
     }
+
     @media (max-width: 1024px) {
       font-size: 50px;
       line-height: 75px;
     }
+
     @media (max-width: 768px) {
       font-size: 40px;
       line-height: 60px;
     }
+
     @media (max-width: 420px) {
       font-size: 28px;
       line-height: 40px;
@@ -128,7 +130,6 @@ $gold: #9D8665;
 
   &__item-description {
     padding-top: 25px;
-
   }
 
   &__item-title {
@@ -176,7 +177,6 @@ $gold: #9D8665;
       font-size: 18px;
       line-height: 20px;
     }
-
   }
 
   &__item-text, &__item-mini {
@@ -197,10 +197,12 @@ $gold: #9D8665;
       font-size: 20px;
       line-height: 23px;
     }
+
     @media (max-width: 768px) {
       font-size: 18px;
       line-height: 21px;
     }
+
     @media (max-width: 420px) {
       font-size: 16px;
       line-height: 19px;
